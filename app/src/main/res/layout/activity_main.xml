@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#e3e3e3"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="8dp">
+    <ImageView
+        android:id="@+id/imageview1"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btncamera_id"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btncamera_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="Camera"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btngray_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="Cinza"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</LinearLayout>
